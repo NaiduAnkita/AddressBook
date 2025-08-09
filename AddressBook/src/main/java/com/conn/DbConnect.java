@@ -8,7 +8,7 @@ public class DbConnect {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/address_book", "root", "root");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/address_book", "{username}", "{password}");
 		} catch (Exception e) {
 e.printStackTrace();
 		}
